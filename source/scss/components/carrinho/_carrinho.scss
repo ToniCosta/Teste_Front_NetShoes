@@ -1,0 +1,145 @@
+.carrinho {
+	background-color: #202025;
+	border-left: 2px solid #ccc;
+	bottom: 0;
+	overflow: auto;
+	position: fixed;
+	right: -515px;
+	top: 0;
+	width: 515px;
+	z-index: 11;
+	@include transition(right .3s);
+}
+
+.carrinhoContent {}
+
+.carrinhoHeader,
+.carrinhoFooter {
+	padding: {
+		left: 23px;
+		right: 23px;
+	}
+}
+
+.carrinhoHeader {
+	padding: 58px 0;
+	text-align: center;
+}
+
+.carrinhoTitulo {
+	color: #fff;
+	display: inline-block;
+	font-size: em(24);
+	font-weight: 700;
+	padding-left: 62px;
+	position: relative;
+	text-transform: uppercase;
+
+	.icon,
+	.carrinhoTituloContador {
+		position: absolute;
+	}
+
+	.icon {
+		left: 0;
+		top: 50%;
+		@include transform(translateY(-50%));
+	}
+
+	.carrinhoContador {
+		background-color: $secondary-color;
+		color: $primary-color;
+		display: inline-block;
+		font: {
+			size: em(7);
+			weight: 700;
+		}
+		height: 19px;
+		left: 19px;
+		line-height: 15px;
+		min-width: 19px;
+		padding: 2px;
+		top: 20px;
+		white-space: nowrap;
+		@include border-radius(50%);
+	}
+}
+
+.carrinhoBody {}
+
+.carrinhoMsg {
+	color: #fff;
+	display: none;
+	padding: 25px 23px;
+}
+
+.carrinhoMsgTitulo {
+	display: block;
+	font-size: em(18);
+	margin-bottom: 10px;
+}
+
+.carrinhoMsgTexto {
+	line-height: 1.2;
+	margin-bottom: 10px;
+}
+
+.carrinhoFooter {
+	padding: {
+		bottom: 31px;
+		top: 31px;
+	}
+
+	.btn {
+	}
+}
+
+.carrinhoFooterSubTotal,
+.carrinhoFooterParcelas {
+	color: $tertiary-color;
+	text-transform: uppercase;
+}
+
+.carrinhoFooterSubTotal {
+	float: left;
+	padding-top: 7px;
+}
+
+.carrinhoFooterInfo {
+	float: right;
+	padding-bottom: 35px;
+	text-align: right;
+}
+
+.carrinhoFooterValor {
+	color: $secondary-color;
+	font-size: em(24);
+
+	span {
+		font-weight: 700;
+	}
+}
+
+.carrinhoFooterParcelas {
+	display: block;
+	font-size: em(12);
+	margin-top: 10px;
+}
+
+#carrinhoOverlay {
+	background-color: rgba(#fff, .8);
+	bottom: 0;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 10
+}
+
+.abrirCarrinho {
+	overflow: hidden;
+
+	.carrinho {
+		right: 0;
+	}
+}

@@ -1,0 +1,13 @@
+.icon {
+	background: {
+		image: url($img-dir + '/icones/bag.png');
+		repeat: no-repeat;
+	}
+	display: inline-block;
+}
+
+.iconCarrinho {
+	background-position: 0 0;
+	height: 40px;
+	width: 33px;
+}

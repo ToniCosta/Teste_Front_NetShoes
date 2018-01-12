@@ -1,0 +1,23 @@
+body {
+  background-color: $body-color;
+  color: $primary-color;
+  font-family: $primary-font;
+  font-size: $base-font-size;
+}
+
+a { text-decoration: none; }
+
+a, button {
+	outline: none;
+}
+
+.container {
+  margin: 0 auto;
+  width: 730px;
+}
+
+.content { padding: 80px 0; }
+
+.overflow {
+	overflow: hidden;
+}

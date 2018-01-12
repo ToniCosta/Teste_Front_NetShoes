@@ -1,0 +1,61 @@
+.produtos {}
+
+.produto {
+	color: $primary-color;
+	margin: {
+		bottom: 30px;
+		top: 30px;
+	}
+	min-height: 318px;
+	text-align: center;
+
+	a {
+		cursor: pointer;
+		display: block;
+	}
+}
+
+.produtoImg {
+	max-width: 100%;
+}
+
+.produtoInfo {
+	margin-top: 10px;
+}
+
+.produtoTitulo {
+	line-height: 1.2;
+	min-height: 32px;
+}
+
+.produtoPreco {
+	font-size: em(12);
+	margin-top: 7px;
+	padding-top: 7px;
+	position: relative;
+
+	&:before {
+		background-color: $secondary-color;
+		content: "";
+		height: 2px;
+		left: 50%;
+		position: absolute;
+		top: 0;
+		width: 15px;
+		@include transform(translateX(-50%));
+	}
+
+	span {
+		font-size: em(28);
+		font-weight: 700;
+	}
+}
+
+.produtoParcelas {
+	color: $tertiary-color;
+	margin-top: 6px;
+
+	span {
+		font-weight: 600;
+	}
+}

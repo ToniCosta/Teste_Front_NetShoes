@@ -1,0 +1,39 @@
+{
+  "name": "front-end-recruitment",
+  "version": "1.0.0",
+  "description": "Processo Seletivo NETSHOES - Front",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "Antonio Costa",
+    "email": "antonio_scosta@hotmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tonicosta"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.12",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-html-minifier": "^0.1.8",
+    "gulp-html-replace": "^1.6.2",
+    "gulp-image-optimization": "^0.1.3",
+    "gulp-imagemin": "^3.2.0",
+    "gulp-jshint": "^2.0.4",
+    "gulp-logger": "0.0.2",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-strip-debug": "^1.1.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-zip": "^4.0.0",
+    "jshint": "^2.9.4",
+    "jshint-stylish": "^2.2.1"
+  },
+  "dependencies": {
+    "gulp-cli": "^2.0.0"
+  }
+}

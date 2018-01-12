@@ -1,0 +1,18 @@
+// core
+@import "utils/_variables";
+@import "utils/_mixins";
+@import "utils/_fonts";
+@import "utils/_reset";
+@import "utils/_grid";
+
+// components
+@import "components/_preloader";
+@import "components/_buttons";
+@import "components/_icons";
+@import "components/_barraCarrinho";
+@import "components/_produtos";
+@import "components/carrinho/_carrinho";
+@import "components/carrinho/_carrinhoItens";
+
+// layout
+@import "layout/_general";

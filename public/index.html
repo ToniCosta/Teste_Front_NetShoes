@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Netshoes - Processo Seletivo - Front</title>
+    <meta name="description" content="Netshoes - Processo Seletivo NETSHOES - Front">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Antonio Costa - antonio_scosta@hotmail.com">
+    <link rel="shortcut icon" href="assets/images/icons/favicon.ico"/>
+    <link rel="stylesheet" href="assets/css/style.min.css">
+  </head>
+
+  <body>
+    <section>
+      <div class="barCarrinho">
+        <div class="container">
+          <p>Você tem <span class="carrinhoContador">0</span> produtos adicionados</p>
+          <button class="btn btn-secondary btn-xs" id="btnAbrirCarrinho">Abrir sacola</button>
+        </div>
+      </div><!-- /.bar-bag -->
+
+      <div class="content">
+        <div class="container">
+        <ul class="produtos row" id="produtosLista"></ul>
+        </div><!-- /.container -->
+      </div><!-- /.content -->
+    </section>
+
+    <aside class="carrinho">
+      <div class="carrinhoContent">
+        <header class="carrinhoHeader">
+          <h4 class="carrinhoTitulo">
+            <span class="icon iconCarrinho"></span>
+            <span class="carrinhoTituloContador carrinhoContador">0</span>
+            Sacola
+          </h4>
+        </header><!-- /.bag-header -->
+
+        <div class="carrinhoMsg" id="carrinhoMsg">
+          <span class="carrinhoMsgTitulo">Sua sacola está vazia.</span>
+          <p class="carrinhoMsgTexto">Clique nos itens disponíveis em nossa loja para adicionar na sacola.</p>
+        </div>
+
+        <div class="carrinhoBody" id="carrinhoBody">
+          <ul class="carrinhoItens" id="carrinhoItens"></ul>
+        </div><!-- /.bag-body -->
+
+        <footer class="carrinhoFooter" id="carrinhoFooter">
+          <div class="clearfix">
+            <span class="carrinhoFooterSubTotal">Subtotal</span>
+            <div class="carrinhoFooterInfo">
+              <div class="carrinhoFooterValor" id="carrinhoTotal"></div>
+              <span class="carrinhoFooterParcelas" id="carrinhoParcelas"></span>
+            </div>
+          </div>
+          <button type="button" class="btn btn-primary btn-block">Comprar</button>
+        </footer><!-- /.bag-footer -->
+      </div><!-- /.bag-content -->
+    </aside><!-- /.bag -->
+
+    <script src="assets/js/netshoes_app.min.js"></script>
+  </body>
+</html>

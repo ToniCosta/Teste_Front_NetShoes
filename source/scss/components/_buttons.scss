@@ -1,0 +1,47 @@
+.btn {
+	background-color: $tertiary-color;
+	border: none;
+	color: $primary-color;
+	cursor: pointer;
+	display: inline-block;
+	font: {
+		family: $primary-font;
+		weight: 700;
+	}
+	padding: 15px;
+	text: {
+		transform: uppercase;
+	  align: center;
+	}
+	vertical-align: middle;
+  white-space: nowrap;
+  @include transition(background-color .2s);
+}
+
+.btn-primary {
+	background-color: #000;
+	color: #fff;
+
+	&:hover {
+		background-color: darken(#000, 10);
+	}
+}
+
+.btn-secondary {
+	background-color: $secondary-color;
+	color: $primary-color;
+
+	&:hover {
+		background-color: darken($secondary-color, 3);
+	}
+}
+
+.btn-block {
+	display: block;
+	width: 100%;
+}
+
+.btn-xs {
+	font-size: em(12);
+	padding: 8px;
+}

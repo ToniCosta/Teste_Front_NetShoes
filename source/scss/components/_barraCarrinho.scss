@@ -1,0 +1,25 @@
+.barCarrinho {
+  background-color: #333;
+  color: #fff;
+  padding: 8px 10px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  text-align: right;
+  z-index: 9;
+
+  p,
+  .btn {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  p span {
+    color: #dfbd00;
+    font-weight: 700;
+  }
+  .btn {
+    margin-left: 10px;
+  }
+}
